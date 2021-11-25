@@ -15,4 +15,9 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quitting the game!");
     }
+
+    public void LevelSelect1()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
