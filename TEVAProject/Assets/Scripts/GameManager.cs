@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private TextMeshProUGUI randomNumberText;
+
+
+    private int randomNumber;
+
+
     void Start()
+    {
+        randomNumber = Random.Range(3, 8);
+        randomNumberText.text = "" + randomNumber; 
+    }
+
+
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckTheAnswer()
     {
-        
+        Debug.Log("Kahtotaas");
     }
 }
