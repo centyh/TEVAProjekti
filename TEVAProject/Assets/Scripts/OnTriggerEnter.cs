@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class OnTriggerEnter : MonoBehaviour
 {
+    public Value number;
     private void OnTriggerEnter2D(Collider2D collision)
-    {        
+    {          
         if (collision.gameObject.tag == "vaaka")
         {
-            Debug.Log("Vaaka tulo");
+            Debug.Log("Vaaka tulo " + number.value);
         }
     }
 
@@ -16,7 +17,7 @@ public class OnTriggerEnter : MonoBehaviour
     {
         if (collision.gameObject.tag == "vaaka")
         {
-            Debug.Log("Pois Vaakalta");
+            Debug.Log("Pois Vaakalta " + number.value);
         }
     }
 }
