@@ -5,6 +5,9 @@ using UnityEngine;
 public class OnTriggerEnter : MonoBehaviour
 {
     public Value number;
+
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {          
         if (collision.gameObject.tag == "vaaka")
