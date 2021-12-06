@@ -286,7 +286,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -294,7 +294,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!1 &166766303
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +469,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!212 &358121119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 446454134}
   - component: {fileID: 446454133}
   - component: {fileID: 446454131}
+  - component: {fileID: 446454135}
   m_Layer: 0
   m_Name: Proto_vaaka_1
   m_TagString: Untagged
@@ -728,7 +729,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446454129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -815,10 +816,10 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &446454134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,6 +832,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e2df18cd867e94ca76c7455b290582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &446454135
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446454129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.42, y: 0.56}
+    newSize: {x: 3.42, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.6999999, y: 0.28}
+      - {x: -1.68, y: 0.28}
+      - {x: -1.7099999, y: 0.25}
+      - {x: -1.7099999, y: 0.16}
+      - {x: -1.5899999, y: 0.08}
+      - {x: -1.4699999, y: 0.04}
+      - {x: -0.76, y: -0.28}
+      - {x: 0.69, y: -0.28}
+      - {x: 1.66, y: 0.13}
+      - {x: 1.7099999, y: 0.17999999}
+      - {x: 1.7099999, y: 0.26999998}
 --- !u!1 &461397238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1053,7 @@ GameObject:
   - component: {fileID: 482484898}
   - component: {fileID: 482484897}
   - component: {fileID: 482484895}
+  - component: {fileID: 482484899}
   m_Layer: 0
   m_Name: Proto_vaaka_1 (1)
   m_TagString: Untagged
@@ -1044,7 +1082,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482484893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1131,10 +1169,10 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &482484898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,6 +1185,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e2df18cd867e94ca76c7455b290582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &482484899
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482484893}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.42, y: 0.56}
+    newSize: {x: 3.42, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.6999999, y: 0.28}
+      - {x: -1.68, y: 0.28}
+      - {x: -1.7099999, y: 0.25}
+      - {x: -1.7099999, y: 0.16}
+      - {x: -1.5899999, y: 0.08}
+      - {x: -1.4699999, y: 0.04}
+      - {x: -0.76, y: -0.28}
+      - {x: 0.69, y: -0.28}
+      - {x: 1.66, y: 0.13}
+      - {x: 1.7099999, y: 0.17999999}
+      - {x: 1.7099999, y: 0.26999998}
 --- !u!1 &498858872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1232,7 @@ GameObject:
   - component: {fileID: 498858873}
   - component: {fileID: 498858874}
   - component: {fileID: 498858875}
+  - component: {fileID: 498858876}
   m_Layer: 0
   m_Name: Proto_vaaka_0
   m_TagString: Untagged
@@ -1252,7 +1327,33 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
+--- !u!61 &498858876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498858872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.1, y: 0.32}
+    newSize: {x: 8.1, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.1, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1931,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1838,7 +1939,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!1 &1249943741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249943742}
   - component: {fileID: 1249943743}
+  - component: {fileID: 1249943744}
   m_Layer: 0
   m_Name: Proto_vaaka_2
   m_TagString: Untagged
@@ -1921,6 +2023,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1249943744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249943741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009423733, y: -0.067686915}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.34, y: 3.13}
+    newSize: {x: 5.34, y: 3.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5494423, y: 2.9946263}
+  m_EdgeRadius: 0
 --- !u!1 &1308872345
 GameObject:
   m_ObjectHideFlags: 0
