@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class PlatformLogic : MonoBehaviour
 {
+    public GameObject platformCollider;
 
-
-    public int massOnScale;
-
-    WeightLogic weightLogic;
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        //massOnScale = collision.GetComponent<WeightLogic>().myWeight;
-    }
-
+    
 
     void Start()
     {
@@ -24,6 +16,6 @@ public class PlatformLogic : MonoBehaviour
 
     void Update()
     {
-        //this.GetComponent<Rigidbody2D>().AddForce(Vector3.down * weightLogic.myWeight);
+        
     }
 }

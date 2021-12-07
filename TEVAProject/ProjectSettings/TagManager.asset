@@ -6,6 +6,7 @@ TagManager:
   tags:
   - vaaka
   - Box
+  - Alusta
   layers:
   - Default
   - TransparentFX

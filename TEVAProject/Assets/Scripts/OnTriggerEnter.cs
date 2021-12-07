@@ -10,7 +10,7 @@ public class OnTriggerEnter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {          
-        if (collision.gameObject.tag == "vaaka")
+        if (collision.gameObject.tag == "Alusta")
         {
             Debug.Log("Vaaka tulo " + number.value);
         }
@@ -18,7 +18,7 @@ public class OnTriggerEnter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "vaaka")
+        if (collision.gameObject.tag == "Alusta")
         {
             Debug.Log("Pois Vaakalta " + number.value);
         }

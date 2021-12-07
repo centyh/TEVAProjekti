@@ -9,7 +9,7 @@ class DragAndDrop : MonoBehaviour
 
     void OnMouseDown()
     {
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+        distance = Vector2.Distance(transform.position, Camera.main.transform.position);
         dragging = true;
     }
 
@@ -23,7 +23,7 @@ class DragAndDrop : MonoBehaviour
         if (dragging)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
+            Vector2 rayPoint = ray.GetPoint(distance);
             transform.position = rayPoint;
         }
     }

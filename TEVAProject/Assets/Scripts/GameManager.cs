@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     private int randomNumber;
     private int finalAnswer;
 
-    private bool boxInArea = false;
 
     private Value number;
 
@@ -43,22 +42,5 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("vaaka"))
-        {
-            boxInArea = true;
-            Vector2 boxPosition = GameObject.Find("Box").transform.position;
-            Vector2 area;
-            area = new Vector2(boxArea.transform.position.x, boxArea.transform.position.y);
 
-            Debug.Log("Box value: " + triggerScript.number);
-        }
-        
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        boxInArea = false;
-    }
 }
