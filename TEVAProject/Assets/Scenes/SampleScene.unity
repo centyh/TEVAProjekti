@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5c9f2fa24b75c4d88c04c643e63a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 3
+  value: 2
 --- !u!114 &30527249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: {fileID: 30527248}
+  boxOnPlatform: 0
 --- !u!50 &30527250
 Rigidbody2D:
   serializedVersion: 4
@@ -565,12 +566,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomNumberText: {fileID: 1548974653}
-  boxArea: {fileID: 440873322}
   boxes:
   - {fileID: 1184432618}
   - {fileID: 30527243}
   - {fileID: 1448436867}
   - {fileID: 461397238}
+  boxArea: {fileID: 698415373}
 --- !u!4 &414463897
 Transform:
   m_ObjectHideFlags: 0
@@ -603,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &440873323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -699,7 +700,6 @@ GameObject:
   - component: {fileID: 446454132}
   - component: {fileID: 446454134}
   - component: {fileID: 446454133}
-  - component: {fileID: 446454131}
   - component: {fileID: 446454135}
   m_Layer: 0
   m_Name: Proto_vaaka_1
@@ -718,36 +718,11 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.9483771, y: 0.25555837, z: 0}
   m_LocalScale: {x: 0.9096601, y: 0.9096601, z: 0.9096601}
-  m_Children: []
+  m_Children:
+  - {fileID: 698415374}
   m_Father: {fileID: 498858873}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &446454131
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446454129}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.42, y: 0.56}
-    newSize: {x: 3.42, y: 0.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.42, y: 0.56}
-  m_EdgeRadius: 0
 --- !u!212 &446454132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -903,6 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: {fileID: 461397241}
+  boxOnPlatform: 0
 --- !u!50 &461397240
 Rigidbody2D:
   serializedVersion: 4
@@ -1052,7 +1028,6 @@ GameObject:
   - component: {fileID: 482484896}
   - component: {fileID: 482484898}
   - component: {fileID: 482484897}
-  - component: {fileID: 482484895}
   - component: {fileID: 482484899}
   m_Layer: 0
   m_Name: Proto_vaaka_1 (1)
@@ -1069,38 +1044,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482484893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.910044, y: 0.25555837, z: 0}
+  m_LocalPosition: {x: -3.9100451, y: 0.2555584, z: 0}
   m_LocalScale: {x: 0.9096601, y: 0.9096601, z: 0.9096601}
   m_Children: []
   m_Father: {fileID: 498858873}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &482484895
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482484893}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.42, y: 0.56}
-    newSize: {x: 3.42, y: 0.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.42, y: 0.56}
-  m_EdgeRadius: 0
 --- !u!212 &482484896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1231,7 +1180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 498858873}
   - component: {fileID: 498858874}
-  - component: {fileID: 498858875}
   - component: {fileID: 498858876}
   m_Layer: 0
   m_Name: Proto_vaaka_0
@@ -1307,27 +1255,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &498858875
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498858872}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 3
 --- !u!61 &498858876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1534,7 +1461,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1542,7 +1469,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!114 &536661343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1482,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5894cfc7736d44ea27c5165451b7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massOnScale: 0
+  platformCollider: {fileID: 0}
+--- !u!1 &698415373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698415374}
+  - component: {fileID: 698415375}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Alusta
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698415374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698415373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 446454130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &698415375
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698415373}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.33}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.39, y: 1.15}
+  m_EdgeRadius: 0
 --- !u!1 &842856855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,6 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: {fileID: 1184432623}
+  boxOnPlatform: 0
 --- !u!50 &1184432625
 Rigidbody2D:
   serializedVersion: 4
@@ -1931,7 +1916,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2186,6 +2171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: {fileID: 1448436870}
+  boxOnPlatform: 0
 --- !u!50 &1448436869
 Rigidbody2D:
   serializedVersion: 4

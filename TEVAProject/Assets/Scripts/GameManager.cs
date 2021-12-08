@@ -8,32 +8,29 @@ public class GameManager : MonoBehaviour
 {
     OnTriggerEnter triggerScript;
     DragAndDrop dragScript;
+    Value valueScript;
 
     [SerializeField] private TextMeshProUGUI randomNumberText;
-    [SerializeField] private GameObject boxArea;
     [SerializeField] private GameObject[] boxes;
+    [SerializeField] private GameObject boxArea;
 
     private int randomNumber;
     private int finalAnswer;
 
-
-    private Value number;
 
 
     void Start()
     {
         GetComponent<OnTriggerEnter>();
 
-        randomNumber = Random.Range(4, 8);
+        randomNumber = Random.Range(4, 4);
         randomNumberText.text = "" + randomNumber;
-
-        randomNumber = finalAnswer;
     }
 
 
     void Update()
     {
-       // CheckingArea();
+
     }
 
     public void CheckTheAnswer()
@@ -41,6 +38,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("Kahtotaas");
     }
 
+    void Testi()
+    {
+        if(triggerScript.boxOnPlatform == true)
+        {
+            Debug.Log("Nice");
+        }
+    }
 
 
 }
