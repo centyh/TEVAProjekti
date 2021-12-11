@@ -770,8 +770,8 @@ MonoBehaviour:
   boxes:
   - {fileID: 1184432618}
   - {fileID: 30527243}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 757067808}
+  - {fileID: 178025045}
   boxArea: {fileID: 698415373}
 --- !u!4 &414463897
 Transform:
