@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Kahtotaas");
     }
 
+
+
     void Testi()
     {
         if(triggerScript.boxOnPlatform == true)

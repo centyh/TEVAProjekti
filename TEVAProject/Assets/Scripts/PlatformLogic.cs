@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class PlatformLogic : MonoBehaviour
 {
-    public GameObject platformCollider;
+    public GameObject platform;
 
-    
+
 
     void Start()
     {
-        
+
     }
 
 
     void Update()
     {
-        
+
     }
-}
+
+}  
