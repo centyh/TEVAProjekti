@@ -14,6 +14,16 @@ public class ResetButton : MonoBehaviour
     {
         transform.position = target.position;
     }
+
+    public void resetSquare3()
+    {
+        transform.position = target.position;
+    }
+
+    public void resetSquare4()
+    {
+        transform.position = target.position;
+    }
     // Start is called before the first frame update
     void Start()
     {
