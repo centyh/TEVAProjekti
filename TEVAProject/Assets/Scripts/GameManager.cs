@@ -6,9 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    OnTriggerEnter triggerScript;
-    DragAndDrop dragScript;
-    Value valueScript;
+    
 
     [SerializeField] private TextMeshProUGUI randomNumberText;
     [SerializeField] private GameObject[] boxes;
@@ -38,15 +36,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Kahtotaas");
     }
 
-
-
-    void Testi()
-    {
-        if(triggerScript.boxOnPlatform == true)
-        {
-            Debug.Log("Nice");
-        }
-    }
 
 
 }
