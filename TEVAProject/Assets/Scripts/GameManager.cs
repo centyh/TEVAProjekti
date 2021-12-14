@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckTheAnswer()
     {
-        Debug.Log("Kahtotaas");
+        Debug.Log("Kahtotaas");        
     }
 
 

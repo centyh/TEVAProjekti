@@ -943,7 +943,10 @@ MonoBehaviour:
   - {fileID: 757067808}
   - {fileID: 178025045}
   number: {fileID: 0}
-  boxOnPlatform: 0
+  boxOnPlatform1: 0
+  boxOnPlatform2: 0
+  boxOnPlatform3: 0
+  boxOnPlatform4: 0
 --- !u!212 &446454132
 SpriteRenderer:
   m_ObjectHideFlags: 0
