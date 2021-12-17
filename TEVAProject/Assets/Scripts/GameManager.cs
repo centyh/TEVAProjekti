@@ -13,16 +13,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject boxArea;
 
     private int randomNumber;
-    private int finalAnswer;
+    //private int finalAnswer;
+    public OnTriggerEnter finalanswer;
 
+    
 
 
     void Start()
     {
         GetComponent<OnTriggerEnter>();
 
-        randomNumber = Random.Range(4, 4);
-        randomNumberText.text = "" + randomNumber;
+        randomNumber = Random.Range(4, 10);
+        randomNumberText.text = "" + randomNumber;        
     }
 
 
@@ -32,8 +34,25 @@ public class GameManager : MonoBehaviour
     }
 
     public void CheckTheAnswer()
-    {
-        Debug.Log("Kahtotaas");        
+    {        
+        {
+            finalanswer = FindObjectOfType<OnTriggerEnter>();
+            Debug.Log("Final answer is " + finalanswer.finalAnswer);
+
+            if (finalanswer.finalAnswer == randomNumber)
+            {
+                Debug.Log("Nice");
+            }
+            else if (finalanswer.finalAnswer >= randomNumber)
+            {
+                Debug.Log("Too much");
+            }
+            else if (finalanswer.finalAnswer <= randomNumber)
+            {
+                Debug.Log("Too little");
+            }
+            //Debug.Log("Kahtotaas");
+        }               
     }
 
 

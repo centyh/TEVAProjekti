@@ -773,6 +773,7 @@ MonoBehaviour:
   - {fileID: 757067808}
   - {fileID: 178025045}
   boxArea: {fileID: 698415373}
+  finalanswer: {fileID: 446454131}
 --- !u!4 &414463897
 Transform:
   m_ObjectHideFlags: 0
@@ -947,6 +948,7 @@ MonoBehaviour:
   boxOnPlatform2: 0
   boxOnPlatform3: 0
   boxOnPlatform4: 0
+  finalAnswer: 0
 --- !u!212 &446454132
 SpriteRenderer:
   m_ObjectHideFlags: 0

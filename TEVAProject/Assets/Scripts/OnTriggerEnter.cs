@@ -16,7 +16,7 @@ public class OnTriggerEnter : MonoBehaviour
     public bool boxOnPlatform4 = false;
 
     private int amountBoxes;
-    private int finalAnswer;
+    public int finalAnswer;
     private int value1;
     private int value2;
     private int value3;
