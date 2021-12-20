@@ -15,12 +15,15 @@ public class GameManager : MonoBehaviour
     private int randomNumber;
     //private int finalAnswer;
     public OnTriggerEnter finalanswer;
-
-    
+    public ResetButton square1;
+    public ResetButton square2;
+    public ResetButton square3;
+    public ResetButton square4;
 
 
     void Start()
     {
+        GetComponent<ResetButton>();
         GetComponent<OnTriggerEnter>();
 
         randomNumber = Random.Range(4, 10);
@@ -41,7 +44,15 @@ public class GameManager : MonoBehaviour
 
             if (finalanswer.finalAnswer == randomNumber)
             {
-                Debug.Log("Nice");
+                Debug.Log("Nice points++");
+                randomNumber = Random.Range(4, 10);
+                randomNumberText.text = "" + randomNumber;
+                square1.GetComponent<ResetButton>().resetSquare1();
+                square2.GetComponent<ResetButton>().resetSquare2();
+                square3.GetComponent<ResetButton>().resetSquare3();
+                square4.GetComponent<ResetButton>().resetSquare4();
+
+
             }
             else if (finalanswer.finalAnswer >= randomNumber)
             {
