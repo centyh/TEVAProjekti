@@ -6,7 +6,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    
+    public GameObject defaultBox;
+    public float currentMass;
+
 
     [SerializeField] private TextMeshProUGUI randomNumberText;
     [SerializeField] private GameObject[] boxes;
@@ -26,8 +28,11 @@ public class GameManager : MonoBehaviour
         GetComponent<ResetButton>();
         GetComponent<OnTriggerEnter>();
 
+
         randomNumber = Random.Range(4, 10);
-        randomNumberText.text = "" + randomNumber;        
+        randomNumberText.text = "" + randomNumber;
+
+
     }
 
 
@@ -62,7 +67,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("Too little");
             }
-            //Debug.Log("Kahtotaas");
+
         }               
     }
 

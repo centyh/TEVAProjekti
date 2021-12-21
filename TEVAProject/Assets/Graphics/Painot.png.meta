@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: a74eb822a670b6b4c94c842e261773b2
+guid: beaca53103b1f5b488b53847fdb2c01d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8648138843829879144
-    second: Vaaka_palat_0
+      213: -4511091123882563276
+    second: Painot_0
   - first:
-      213: -4266031252766784380
-    second: Vaaka_palat_1
+      213: 9163023573849277237
+    second: Painot_1
   - first:
-      213: 7497754184332116238
-    second: Vaaka_palat_2
-  - first:
-      213: 5232955697186871107
-    second: Vaaka_palat_3
-  - first:
-      213: -1468433022820499380
-    second: Vaaka_palat_4
-  - first:
-      213: 9056102770800499711
-    second: Vaaka_palat_5
-  - first:
-      213: -6421423285066658843
-    second: Vaaka_palat_6
-  - first:
-      213: 8951741545617731436
-    second: Vaaka_palat_7
+      213: -3070080307034650143
+    second: Painot_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vaaka_palat_0
+      name: Painot_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 657
-        width: 585
-        height: 161
+        x: 0
+        y: 0
+        width: 426
+        height: 459
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 861ccba657c540870800000000000000
-      internalID: 8648138843829879144
+      spriteID: 439ef8b06826561c0800000000000000
+      internalID: -4511091123882563276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaaka_palat_1
+      name: Painot_1
       rect:
         serializedVersion: 2
-        x: 308
-        y: 471
-        width: 1378
-        height: 399
+        x: 452
+        y: 0
+        width: 487
+        height: 594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4840f129d230cc4c0800000000000000
-      internalID: -4266031252766784380
+      spriteID: 53301d38469992f70800000000000000
+      internalID: 9163023573849277237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaaka_palat_2
+      name: Painot_2
       rect:
         serializedVersion: 2
-        x: 1374
-        y: 644
-        width: 586
-        height: 162
+        x: 940
+        y: 0
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,113 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e018052b4bf5d0860800000000000000
-      internalID: 7497754184332116238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaaka_palat_3
-      rect:
-        serializedVersion: 2
-        x: 2812
-        y: 578
-        width: 11
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3471e203b713f9840800000000000000
-      internalID: 5232955697186871107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaaka_palat_4
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 73
-        width: 383
-        height: 507
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c40c45222f31f9be0800000000000000
-      internalID: -1468433022820499380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaaka_palat_5
-      rect:
-        serializedVersion: 2
-        x: 1929
-        y: 84
-        width: 598
-        height: 492
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffb9efe1d7dbdad70800000000000000
-      internalID: 9056102770800499711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaaka_palat_6
-      rect:
-        serializedVersion: 2
-        x: 2329
-        y: 444
-        width: 986
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eb0e2d5b8582e6a0800000000000000
-      internalID: -6421423285066658843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaaka_palat_7
-      rect:
-        serializedVersion: 2
-        x: 3129
-        y: 85
-        width: 599
-        height: 493
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6fa6a3e189fa3c70800000000000000
-      internalID: 8951741545617731436
+      spriteID: 1e9074b0a32e465d0800000000000000
+      internalID: -3070080307034650143
       vertices: []
       indices: 
       edges: []

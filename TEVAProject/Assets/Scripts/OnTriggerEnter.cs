@@ -38,14 +38,7 @@ public class OnTriggerEnter : MonoBehaviour
     public void CheckAnswer()
     {
 
-        if (finalAnswer == manager.randomNumber)
-        {
-            Debug.Log("Answer is right!");
-        }
-        else
-        {
-            Debug.Log("Answer is wrong!");
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
