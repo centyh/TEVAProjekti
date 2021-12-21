@@ -5,6 +5,7 @@ using UnityEngine;
 public class OnTriggerEnter : MonoBehaviour
 {
     private Value valueScript;
+    private GameManager manager;
 
     public GameObject[] boxes;
 
@@ -16,21 +17,35 @@ public class OnTriggerEnter : MonoBehaviour
     public bool boxOnPlatform4 = false;
 
     private int amountBoxes;
-    private int finalAnswer;
+    public int finalAnswer;
     private int value1;
     private int value2;
     private int value3;
     private int value4;
 
+
     void Start()
     {
         //finalAnswer = 4;
-        
+
     }
 
     void Update()
     {
-        
+
+    }
+
+    public void CheckAnswer()
+    {
+
+        if (finalAnswer == manager.randomNumber)
+        {
+            Debug.Log("Answer is right!");
+        }
+        else
+        {
+            Debug.Log("Answer is wrong!");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

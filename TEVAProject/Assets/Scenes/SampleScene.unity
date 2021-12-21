@@ -773,6 +773,7 @@ MonoBehaviour:
   - {fileID: 757067808}
   - {fileID: 178025045}
   boxArea: {fileID: 698415373}
+  randomNumber: 0
 --- !u!4 &414463897
 Transform:
   m_ObjectHideFlags: 0
@@ -947,6 +948,7 @@ MonoBehaviour:
   boxOnPlatform2: 0
   boxOnPlatform3: 0
   boxOnPlatform4: 0
+  finalAnswer: 0
 --- !u!212 &446454132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2198,7 +2200,7 @@ GameObject:
   - component: {fileID: 968584138}
   - component: {fileID: 968584137}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CheckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2268,9 +2270,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 414463896}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: CheckTheAnswer
+      - m_Target: {fileID: 446454131}
+        m_TargetAssemblyTypeName: OnTriggerEnter, Assembly-CSharp
+        m_MethodName: CheckAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
