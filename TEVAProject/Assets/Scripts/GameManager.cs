@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI randomNumberText;
     [SerializeField] private GameObject[] boxes;
     [SerializeField] private GameObject boxArea;
@@ -26,6 +28,8 @@ public class GameManager : MonoBehaviour
     public GameObject tooMuchText;
     public GameObject tooLittleText;
 
+    private int currentScore;
+
 
     void Start()
     {
@@ -37,7 +41,7 @@ public class GameManager : MonoBehaviour
         randomNumber = Random.Range(4, 10);
         randomNumberText.text = "" + randomNumber;
 
-
+        
     }
 
 
@@ -71,6 +75,8 @@ public class GameManager : MonoBehaviour
         {
             defaultBox.GetComponent<Rigidbody2D>().mass = 10;
         }
+
+        scoreText.text = currentScore + "/10";
     }
 
     public void CheckTheAnswer()
@@ -90,6 +96,11 @@ public class GameManager : MonoBehaviour
                 square4.GetComponent<ResetButton>().resetSquare4();
 
                 StartCoroutine(CorrectText());
+                currentScore++;
+                if(currentScore == 10)
+                {
+                    SceneManager.LoadScene(1);
+                }
 
             }
             else if (finalanswer.finalAnswer >= randomNumber)
