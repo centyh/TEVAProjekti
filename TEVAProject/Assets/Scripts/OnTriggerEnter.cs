@@ -32,7 +32,12 @@ public class OnTriggerEnter : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("amountBoxes " + amountBoxes + " finalanswer " + finalAnswer);
 
+        if (amountBoxes == 0)
+        {
+            finalAnswer = 0;
+        }
     }
 
     public void CheckAnswer()
