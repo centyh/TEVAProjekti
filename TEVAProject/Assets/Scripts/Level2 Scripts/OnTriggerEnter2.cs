@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnTriggerEnter : MonoBehaviour
+public class OnTriggerEnter2 : MonoBehaviour
 {
     private Value valueScript;
-    private GameManager manager;
+    private GameManager2 manager;
 
     public Value number;
 
@@ -41,7 +41,7 @@ public class OnTriggerEnter : MonoBehaviour
     public void CheckAnswer()
     {
 
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,13 +50,13 @@ public class OnTriggerEnter : MonoBehaviour
         if (collision.gameObject.tag == "Box")
         {
             //Debug.Log("Vaaka tulo " + number.value);
-            amountBoxes++;           
-            Debug.Log("Boxes on platform: " + amountBoxes);            
+            amountBoxes++;
+            Debug.Log("Boxes on platform: " + amountBoxes);
         }
 
         if (collision.gameObject.name == "Square1")
         {
-            finalAnswer += 1;
+            finalAnswer += 10;
             Debug.Log("Final Answer is " + finalAnswer);
         }
 
@@ -76,7 +76,7 @@ public class OnTriggerEnter : MonoBehaviour
         {
             finalAnswer += 4;
             Debug.Log("Final Answer is " + finalAnswer);
-        }        
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -124,9 +124,9 @@ public class OnTriggerEnter : MonoBehaviour
         {
             //Debug.Log("Pois Vaakalta " + number.value);            
             amountBoxes--;
-            Debug.Log("Boxes on platform: " + amountBoxes);          
-            
-        }        
+            Debug.Log("Boxes on platform: " + amountBoxes);
+
+        }
 
         if (collision.gameObject.name == "Square1" && boxOnPlatform1 == false)
         {

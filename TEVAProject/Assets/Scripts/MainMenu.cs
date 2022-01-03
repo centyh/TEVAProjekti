@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("LevelSelect");
     }   
 
     public void QuitGame()
@@ -18,6 +18,11 @@ public class MainMenu : MonoBehaviour
 
     public void LevelSelect1()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void LevelSelect2()
+    {
+        SceneManager.LoadScene("Level2");
     }
 }
