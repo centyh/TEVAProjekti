@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class StayInside : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Transform resetPoint;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+
+        if(screenPos.x < 0)
+        {
+            transform.position = resetPoint.position;
+        }
+        else if(screenPos.x > Screen.width)
+        {
+            transform.position = resetPoint.position;
+        }
+        if(screenPos.y < 0)
+        {
+            transform.position = resetPoint.position;
+        }
+        else if(screenPos.y > Screen.height)
+        {
+            transform.position = resetPoint.position;
+        }
 
     }
 }

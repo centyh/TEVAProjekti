@@ -38,11 +38,6 @@ public class OnTriggerEnter2 : MonoBehaviour
         }
     }
 
-    public void CheckAnswer()
-    {
-
-
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

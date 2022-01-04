@@ -18,7 +18,7 @@ public class GameManager2 : MonoBehaviour
 
     public int randomNumber;
     //private int finalAnswer;
-    public OnTriggerEnter finalanswer;
+    public OnTriggerEnter2 finalanswer;
     public ResetButton square1;
     public ResetButton square2;
     public ResetButton square3;
@@ -38,7 +38,7 @@ public class GameManager2 : MonoBehaviour
         defaultBox.GetComponent<Rigidbody2D>();
 
 
-        randomNumber = Random.Range(10, 50);
+        randomNumber = Random.Range(5, 15);
         randomNumberText.text = "" + randomNumber;
 
 
@@ -82,13 +82,13 @@ public class GameManager2 : MonoBehaviour
     public void CheckTheAnswer()
     {
         {
-            finalanswer = FindObjectOfType<OnTriggerEnter>();
-            Debug.Log("Final answer is " + finalanswer.finalAnswer);
+            finalanswer = FindObjectOfType<OnTriggerEnter2>();
+            //Debug.Log("Final answer is " + finalanswer.finalAnswer);
 
             if (finalanswer.finalAnswer == randomNumber)
             {
                 Debug.Log("Nice points++");
-                randomNumber = Random.Range(4, 10);
+                randomNumber = Random.Range(5, 15);
                 randomNumberText.text = "" + randomNumber;
                 square1.GetComponent<ResetButton>().resetSquare1();
                 square2.GetComponent<ResetButton>().resetSquare2();
@@ -99,7 +99,7 @@ public class GameManager2 : MonoBehaviour
                 currentScore++;
                 if (currentScore == 10)
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene("LevelSelect");
                 }
 
             }

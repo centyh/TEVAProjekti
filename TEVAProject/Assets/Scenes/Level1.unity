@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 30527248}
   - component: {fileID: 30527250}
   - component: {fileID: 30527251}
+  - component: {fileID: 30527249}
   m_Layer: 6
   m_Name: Square2
   m_TagString: Box
@@ -262,6 +263,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+--- !u!114 &30527249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30527243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c6f7a5ba7e4194b979755fbc4e5389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPoint: {fileID: 2041416929}
 --- !u!50 &30527250
 Rigidbody2D:
   serializedVersion: 4
@@ -420,6 +434,7 @@ GameObject:
   - component: {fileID: 178025048}
   - component: {fileID: 178025047}
   - component: {fileID: 178025046}
+  - component: {fileID: 178025053}
   m_Layer: 6
   m_Name: Square4
   m_TagString: Box
@@ -578,6 +593,19 @@ Transform:
   m_Father: {fileID: 1120103012}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178025053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178025045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c6f7a5ba7e4194b979755fbc4e5389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPoint: {fileID: 1382188427}
 --- !u!1 &277494032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1145,7 @@ MonoBehaviour:
   - {fileID: 178025045}
   boxArea: {fileID: 698415373}
   randomNumber: 0
-  finalanswer: {fileID: 446454131}
+  finalanswer: {fileID: 0}
   square1: {fileID: 1184432626}
   square2: {fileID: 30527251}
   square3: {fileID: 757067809}
@@ -2312,6 +2340,7 @@ GameObject:
   - component: {fileID: 757067811}
   - component: {fileID: 757067810}
   - component: {fileID: 757067809}
+  - component: {fileID: 757067816}
   m_Layer: 6
   m_Name: Square3
   m_TagString: Box
@@ -2470,6 +2499,19 @@ Transform:
   m_Father: {fileID: 1120103012}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757067816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757067808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c6f7a5ba7e4194b979755fbc4e5389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPoint: {fileID: 377261273}
 --- !u!1 &799369544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3690,7 @@ GameObject:
   - component: {fileID: 1184432623}
   - component: {fileID: 1184432625}
   - component: {fileID: 1184432626}
+  - component: {fileID: 1184432624}
   m_Layer: 6
   m_Name: Square1
   m_TagString: Box
@@ -3772,6 +3815,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+--- !u!114 &1184432624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184432618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c6f7a5ba7e4194b979755fbc4e5389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPoint: {fileID: 1388042214}
 --- !u!50 &1184432625
 Rigidbody2D:
   serializedVersion: 4
