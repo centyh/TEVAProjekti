@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         defaultBox.GetComponent<Rigidbody2D>();
 
 
-        randomNumber = Random.Range(4, 10);
+        randomNumber = Random.Range(1, 5);
         randomNumberText.text = "" + randomNumber;
 
         
@@ -47,34 +47,26 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(randomNumber == 4)
+        if (randomNumber == 1)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 1;
+        }
+        if (randomNumber == 2)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2;
+        }
+        if (randomNumber == 3)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3;
+        }
+        if (randomNumber == 4)
         {
             defaultBox.GetComponent<Rigidbody2D>().mass = 4;
         }
         if (randomNumber == 5)
         {
             defaultBox.GetComponent<Rigidbody2D>().mass = 5;
-        }
-        if (randomNumber == 6)
-        {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 6;
-        }
-        if (randomNumber == 7)
-        {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 7;
-        }
-        if (randomNumber == 8)
-        {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 8;
-        }
-        if (randomNumber == 9)
-        {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 9;
-        }
-        if (randomNumber == 10)
-        {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 10;
-        }
+        }        
 
         scoreText.text = currentScore + "/10";
     }
@@ -88,7 +80,7 @@ public class GameManager : MonoBehaviour
             if (finalanswer.finalAnswer == randomNumber)
             {
                 Debug.Log("Nice points++");
-                randomNumber = Random.Range(4, 10);
+                randomNumber = Random.Range(1, 5);
                 randomNumberText.text = "" + randomNumber;
                 square1.GetComponent<ResetButton>().resetSquare1();
                 square2.GetComponent<ResetButton>().resetSquare2();
