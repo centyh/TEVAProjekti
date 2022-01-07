@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public ResetButton square2;
     public ResetButton square3;
     public ResetButton square4;
+    public Button checkButton;
 
     public GameObject correctText;
     public GameObject tooMuchText;
@@ -113,14 +114,16 @@ public class GameManager : MonoBehaviour
     IEnumerator CorrectText()
     {
         correctText.SetActive(true);
+        checkButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3);
+        checkButton.GetComponent<Button>().interactable = true;
         correctText.SetActive(false);
     }
 
     IEnumerator TooMuchText()
-    {
-        tooMuchText.SetActive(true);
-        yield return new WaitForSeconds(3);
+    {        
+        tooMuchText.SetActive(true);        
+        yield return new WaitForSeconds(3);        
         tooMuchText.SetActive(false);
     }
 
