@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         defaultBox.GetComponent<Rigidbody2D>();
 
 
-        randomNumber = Random.Range(1, 5);
+        randomNumber = Random.Range(1, 6);
         randomNumberText.text = "" + randomNumber;
 
         
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
             if (finalanswer.finalAnswer == randomNumber)
             {
                 Debug.Log("Nice points++");
-                randomNumber = Random.Range(1, 5);
+                randomNumber = Random.Range(1, 6);
                 randomNumberText.text = "" + randomNumber;
                 square1.GetComponent<ResetButton>().resetSquare1();
                 square2.GetComponent<ResetButton>().resetSquare2();
