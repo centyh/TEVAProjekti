@@ -51,7 +51,7 @@ public class OnTriggerEnter2 : MonoBehaviour
 
         if (collision.gameObject.name == "Square1")
         {
-            finalAnswer += 10;
+            finalAnswer += 1;
             Debug.Log("Final Answer is " + finalAnswer);
         }
 

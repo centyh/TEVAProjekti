@@ -72,11 +72,11 @@ public class OnTriggerEnter : MonoBehaviour
             Debug.Log("Final Answer is " + finalAnswer);
         }
 
-        if (collision.gameObject.name == "Square4")
-        {
-            finalAnswer += 4;
-            Debug.Log("Final Answer is " + finalAnswer);
-        }        
+        //if (collision.gameObject.name == "Square4")
+        //{
+        //    finalAnswer += 4;
+        //    Debug.Log("Final Answer is " + finalAnswer);
+        //}        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -104,13 +104,13 @@ public class OnTriggerEnter : MonoBehaviour
             boxOnPlatform3 = true;
             //Debug.Log("Value: " + value3);
         }
-        if (collision.gameObject.name == "Square4")
-        {
-            //Debug.Log("Oranssi box alueella");
-            value4 = GameObject.Find("Square4").GetComponent<Value>().value;
-            boxOnPlatform4 = true;
-            //Debug.Log("Value: " + value4);
-        }
+        //if (collision.gameObject.name == "Square4")
+        //{
+        //    //Debug.Log("Oranssi box alueella");
+        //    value4 = GameObject.Find("Square4").GetComponent<Value>().value;
+        //    boxOnPlatform4 = true;
+        //    //Debug.Log("Value: " + value4);
+        //}
     }
 
     private void OnTriggerExit2D(Collider2D collision)
