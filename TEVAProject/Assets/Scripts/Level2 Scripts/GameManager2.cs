@@ -23,6 +23,7 @@ public class GameManager2 : MonoBehaviour
     public ResetButton square2;
     public ResetButton square3;
     public ResetButton square4;
+    public Button checkButton;
 
     public GameObject correctText;
     public GameObject tooMuchText;
@@ -38,7 +39,7 @@ public class GameManager2 : MonoBehaviour
         defaultBox.GetComponent<Rigidbody2D>();
 
 
-        randomNumber = Random.Range(4, 10);
+        randomNumber = Random.Range(4, 11);
         randomNumberText.text = "" + randomNumber;
 
 
@@ -88,7 +89,7 @@ public class GameManager2 : MonoBehaviour
             if (finalanswer.finalAnswer == randomNumber)
             {
                 Debug.Log("Nice points++");
-                randomNumber = Random.Range(4, 10);
+                randomNumber = Random.Range(4, 11);
                 randomNumberText.text = "" + randomNumber;
                 square1.GetComponent<ResetButton>().resetSquare1();
                 square2.GetComponent<ResetButton>().resetSquare2();
@@ -121,7 +122,9 @@ public class GameManager2 : MonoBehaviour
     IEnumerator CorrectText()
     {
         correctText.SetActive(true);
+        checkButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3);
+        checkButton.GetComponent<Button>().interactable = true;
         correctText.SetActive(false);
     }
 
