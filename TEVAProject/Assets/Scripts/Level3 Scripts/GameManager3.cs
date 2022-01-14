@@ -95,7 +95,7 @@ public class GameManager3 : MonoBehaviour
                 square3.GetComponent<ResetButton>().resetSquare3();
                 square4.GetComponent<ResetButton>().resetSquare4();
 
-                StartCoroutine(CorrectText());
+                //StartCoroutine(CorrectText());
                 currentScore++;
                 if (currentScore == 10)
                 {
@@ -106,37 +106,37 @@ public class GameManager3 : MonoBehaviour
             else if (finalanswer.finalAnswer >= randomNumber)
             {
                 Debug.Log("Too much");
-                StartCoroutine(TooMuchText());
+                //StartCoroutine(TooMuchText());
             }
             else if (finalanswer.finalAnswer <= randomNumber)
             {
                 Debug.Log("Too little");
-                StartCoroutine(TooLittleText());
+                //StartCoroutine(TooLittleText());
             }
 
         }
     }
 
 
-    IEnumerator CorrectText()
-    {
-        correctText.SetActive(true);
-        yield return new WaitForSeconds(3);
-        correctText.SetActive(false);
-    }
+    //IEnumerator CorrectText()
+    //{
+    //    correctText.SetActive(true);
+    //    yield return new WaitForSeconds(3);
+    //    correctText.SetActive(false);
+    //}
 
-    IEnumerator TooMuchText()
-    {
-        tooMuchText.SetActive(true);
-        yield return new WaitForSeconds(3);
-        tooMuchText.SetActive(false);
-    }
+    //IEnumerator TooMuchText()
+    //{
+    //    tooMuchText.SetActive(true);
+    //    yield return new WaitForSeconds(3);
+    //    tooMuchText.SetActive(false);
+    //}
 
-    IEnumerator TooLittleText()
-    {
-        tooLittleText.SetActive(true);
-        yield return new WaitForSeconds(3);
-        tooLittleText.SetActive(false);
-    }
+    //IEnumerator TooLittleText()
+    //{
+    //    tooLittleText.SetActive(true);
+    //    yield return new WaitForSeconds(3);
+    //    tooLittleText.SetActive(false);
+    //}
 
 }
