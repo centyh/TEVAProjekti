@@ -13,6 +13,9 @@ public class OnTriggerEnter3 : MonoBehaviour
     public bool boxOnPlatform2 = false;
     public bool boxOnPlatform3 = false;
     public bool boxOnPlatform4 = false;
+    public bool boxOnPlatform5 = false;
+    public bool boxOnPlatform6 = false;
+    public bool boxOnPlatform7 = false;
 
     private int amountBoxes;
     public int finalAnswer;
@@ -20,6 +23,9 @@ public class OnTriggerEnter3 : MonoBehaviour
     private int value2;
     private int value3;
     private int value4;
+    private int value5;
+    private int value6;
+    private int value7;
 
 
     void Start()
@@ -51,25 +57,43 @@ public class OnTriggerEnter3 : MonoBehaviour
 
         if (collision.gameObject.name == "Square1")
         {
-            finalAnswer += 1;
+            finalAnswer += 3;
             Debug.Log("Final Answer is " + finalAnswer);
         }
 
         if (collision.gameObject.name == "Square2")
         {
-            finalAnswer += 2;
+            finalAnswer += 6;
             Debug.Log("Final Answer is " + finalAnswer);
         }
 
         if (collision.gameObject.name == "Square3")
         {
-            finalAnswer += 3;
+            finalAnswer += 7;
             Debug.Log("Final Answer is " + finalAnswer);
         }
 
         if (collision.gameObject.name == "Square4")
         {
-            finalAnswer += 4;
+            finalAnswer += 8;
+            Debug.Log("Final Answer is " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square5")
+        {
+            finalAnswer += 9;
+            Debug.Log("Final Answer is " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square6")
+        {
+            finalAnswer += 10;
+            Debug.Log("Final Answer is " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square7")
+        {
+            finalAnswer += 15;
             Debug.Log("Final Answer is " + finalAnswer);
         }
     }
@@ -82,9 +106,7 @@ public class OnTriggerEnter3 : MonoBehaviour
             value1 = GameObject.Find("Square1").GetComponent<Value>().value;
             boxOnPlatform1 = true;
             //Debug.Log("Value: " + value1);
-
         }
-
         if (collision.gameObject.name == "Square2")
         {
             //Debug.Log("Vihreä box alueella");
@@ -106,6 +128,27 @@ public class OnTriggerEnter3 : MonoBehaviour
             boxOnPlatform4 = true;
             //Debug.Log("Value: " + value4);
         }
+        if (collision.gameObject.name == "Square5")
+        {
+            //Debug.Log("Oranssi box alueella");
+            value5 = GameObject.Find("Square5").GetComponent<Value>().value;
+            boxOnPlatform5 = true;
+            //Debug.Log("Value: " + value4);
+        }
+        if (collision.gameObject.name == "Square6")
+        {
+            //Debug.Log("Oranssi box alueella");
+            value6 = GameObject.Find("Square6").GetComponent<Value>().value;
+            boxOnPlatform6 = true;
+            //Debug.Log("Value: " + value4);
+        }
+        if (collision.gameObject.name == "Square7")
+        {
+            //Debug.Log("Oranssi box alueella");
+            value7 = GameObject.Find("Square7").GetComponent<Value>().value;
+            boxOnPlatform7 = true;
+            //Debug.Log("Value: " + value4);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -114,6 +157,9 @@ public class OnTriggerEnter3 : MonoBehaviour
         boxOnPlatform2 = false;
         boxOnPlatform3 = false;
         boxOnPlatform4 = false;
+        boxOnPlatform5 = false;
+        boxOnPlatform6 = false;
+        boxOnPlatform7 = false;
 
         if (collision.gameObject.tag == "Box")
         {
@@ -144,6 +190,24 @@ public class OnTriggerEnter3 : MonoBehaviour
         if (collision.gameObject.name == "Square4" && boxOnPlatform4 == false)
         {
             finalAnswer -= value4;
+            Debug.Log("Minus the Final Answer? " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square5" && boxOnPlatform5 == false)
+        {
+            finalAnswer -= value5;
+            Debug.Log("Minus the Final Answer? " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square6" && boxOnPlatform6 == false)
+        {
+            finalAnswer -= value6;
+            Debug.Log("Minus the Final Answer? " + finalAnswer);
+        }
+
+        if (collision.gameObject.name == "Square7" && boxOnPlatform7 == false)
+        {
+            finalAnswer -= value7;
             Debug.Log("Minus the Final Answer? " + finalAnswer);
         }
     }
