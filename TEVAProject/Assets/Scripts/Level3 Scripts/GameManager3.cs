@@ -38,7 +38,7 @@ public class GameManager3 : MonoBehaviour
         defaultBox.GetComponent<Rigidbody2D>();
 
 
-        randomNumber = Random.Range(4, 10);
+        randomNumber = Random.Range(16, 41);
         randomNumberText.text = "" + randomNumber;
 
 
@@ -88,7 +88,7 @@ public class GameManager3 : MonoBehaviour
             if (finalanswer.finalAnswer == randomNumber)
             {
                 Debug.Log("Nice points++");
-                randomNumber = Random.Range(4, 10);
+                randomNumber = Random.Range(16, 41);
                 randomNumberText.text = "" + randomNumber;
                 square1.GetComponent<ResetButton>().resetSquare1();
                 square2.GetComponent<ResetButton>().resetSquare2();
