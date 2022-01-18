@@ -47,34 +47,107 @@ public class GameManager3 : MonoBehaviour
 
     void Update()
     {
-        if (randomNumber == 4)
+        if (randomNumber == 16)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 4;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 1.6f;
         }
-        if (randomNumber == 5)
+        if (randomNumber == 17)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 5;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 1.7f;
         }
-        if (randomNumber == 6)
+        if (randomNumber == 18)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 6;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 1.8f;
         }
-        if (randomNumber == 7)
+        if (randomNumber == 19)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 7;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 1.9f;
         }
-        if (randomNumber == 8)
+        if (randomNumber == 20)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 8;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.0f;
         }
-        if (randomNumber == 9)
+        if (randomNumber == 21)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 9;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.1f;
         }
-        if (randomNumber == 10)
+        if (randomNumber == 22)
         {
-            defaultBox.GetComponent<Rigidbody2D>().mass = 10;
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.2f;
         }
+        if (randomNumber == 23)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.3f;
+        }
+        if (randomNumber == 24)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.4f;
+        }
+        if (randomNumber == 25)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.5f;
+        }
+        if (randomNumber == 26)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.6f;
+        }
+        if (randomNumber == 27)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.7f;
+        }
+        if (randomNumber == 28)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.8f;
+        }
+        if (randomNumber == 29)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 2.9f;
+        }
+        if (randomNumber == 30)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.0f;
+        }
+        if (randomNumber == 31)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.1f;
+        }
+        if (randomNumber == 32)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.2f;
+        }
+        if (randomNumber == 33)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.3f;
+        }
+        if (randomNumber == 34)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.4f;
+        }
+        if (randomNumber == 35)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.5f;
+        }
+        if (randomNumber == 36)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.6f;
+        }
+        if (randomNumber == 37)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.7f;
+        }
+        if (randomNumber == 38)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.8f;
+        }
+        if (randomNumber == 39)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 3.9f;
+        }
+        if (randomNumber == 40)
+        {
+            defaultBox.GetComponent<Rigidbody2D>().mass = 4.0f;
+        }
+
 
         scoreText.text = currentScore + "/10";
     }
