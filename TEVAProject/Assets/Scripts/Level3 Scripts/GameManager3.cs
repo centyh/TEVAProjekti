@@ -31,7 +31,7 @@ public class GameManager3 : MonoBehaviour
     public GameObject tooMuchText;
     public GameObject tooLittleText;
 
-    private int currentScore;
+    public int currentScore;
 
 
     void Start()
