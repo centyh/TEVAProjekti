@@ -23,6 +23,9 @@ public class GameManager3 : MonoBehaviour
     public ResetButton square2;
     public ResetButton square3;
     public ResetButton square4;
+    public ResetButton square5;
+    public ResetButton square6;
+    public ResetButton square7;
 
     public GameObject correctText;
     public GameObject tooMuchText;
@@ -167,8 +170,11 @@ public class GameManager3 : MonoBehaviour
                 square2.GetComponent<ResetButton>().resetSquare2();
                 square3.GetComponent<ResetButton>().resetSquare3();
                 square4.GetComponent<ResetButton>().resetSquare4();
+                square5.GetComponent<ResetButton>().resetSquare5();
+                square6.GetComponent<ResetButton>().resetSquare6();
+                square7.GetComponent<ResetButton>().resetSquare7();
 
-                //StartCoroutine(CorrectText());
+                StartCoroutine(CorrectText());
                 currentScore++;
                 if (currentScore == 10)
                 {
@@ -179,37 +185,37 @@ public class GameManager3 : MonoBehaviour
             else if (finalanswer.finalAnswer >= randomNumber)
             {
                 Debug.Log("Too much");
-                //StartCoroutine(TooMuchText());
+                StartCoroutine(TooMuchText());
             }
             else if (finalanswer.finalAnswer <= randomNumber)
             {
                 Debug.Log("Too little");
-                //StartCoroutine(TooLittleText());
+                StartCoroutine(TooLittleText());
             }
 
         }
     }
 
 
-    //IEnumerator CorrectText()
-    //{
-    //    correctText.SetActive(true);
-    //    yield return new WaitForSeconds(3);
-    //    correctText.SetActive(false);
-    //}
+    IEnumerator CorrectText()
+    {
+        correctText.SetActive(true);
+        yield return new WaitForSeconds(3);
+        correctText.SetActive(false);
+    }
 
-    //IEnumerator TooMuchText()
-    //{
-    //    tooMuchText.SetActive(true);
-    //    yield return new WaitForSeconds(3);
-    //    tooMuchText.SetActive(false);
-    //}
+    IEnumerator TooMuchText()
+    {
+        tooMuchText.SetActive(true);
+        yield return new WaitForSeconds(3);
+        tooMuchText.SetActive(false);
+    }
 
-    //IEnumerator TooLittleText()
-    //{
-    //    tooLittleText.SetActive(true);
-    //    yield return new WaitForSeconds(3);
-    //    tooLittleText.SetActive(false);
-    //}
+    IEnumerator TooLittleText()
+    {
+        tooLittleText.SetActive(true);
+        yield return new WaitForSeconds(3);
+        tooLittleText.SetActive(false);
+    }
 
 }

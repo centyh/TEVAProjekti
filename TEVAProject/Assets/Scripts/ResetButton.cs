@@ -25,6 +25,21 @@ public class ResetButton : MonoBehaviour
         transform.position = target.position;
     }
 
+    public void resetSquare5()
+    {
+        transform.position = target.position;
+    }
+
+    public void resetSquare6()
+    {
+        transform.position = target.position;
+    }
+
+    public void resetSquare7()
+    {
+        transform.position = target.position;
+    }
+
     public void resetAlusta1()
     {
         transform.position = target.position;
