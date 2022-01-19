@@ -26,6 +26,7 @@ public class GameManager3 : MonoBehaviour
     public ResetButton square5;
     public ResetButton square6;
     public ResetButton square7;
+    public Button checkButton;
 
     public GameObject correctText;
     public GameObject tooMuchText;
@@ -200,7 +201,9 @@ public class GameManager3 : MonoBehaviour
     IEnumerator CorrectText()
     {
         correctText.SetActive(true);
+        checkButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3);
+        checkButton.GetComponent<Button>().interactable = true;
         correctText.SetActive(false);
     }
 
