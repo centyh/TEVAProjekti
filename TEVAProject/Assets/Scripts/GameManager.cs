@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public GameObject correctText;
     public GameObject tooMuchText;
     public GameObject tooLittleText;
+    public GameObject correctMarker;
+    public GameObject goodJob;
 
     private int currentScore;
 
@@ -93,7 +95,8 @@ public class GameManager : MonoBehaviour
                 currentScore++;
                 if(currentScore == 10)
                 {
-                    SceneManager.LoadScene(1);
+                    StartCoroutine(WaitFewSeconds());
+                    
                 }
 
             }
@@ -116,9 +119,11 @@ public class GameManager : MonoBehaviour
     {
         correctText.SetActive(true);
         checkButton.GetComponent<Button>().interactable = false;
+        correctMarker.SetActive(true);
         yield return new WaitForSeconds(3);
         checkButton.GetComponent<Button>().interactable = true;
         correctText.SetActive(false);
+        correctMarker.SetActive(false);
     }
 
     IEnumerator TooMuchText()
@@ -134,5 +139,14 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         tooLittleText.SetActive(false);
     }
+
+    IEnumerator WaitFewSeconds()
+    {
+        goodJob.SetActive(true);
+        yield return new WaitForSeconds(4);
+        goodJob.SetActive(false);
+        SceneManager.LoadScene(1);
+    }
+
 
 }

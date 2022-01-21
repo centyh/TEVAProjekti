@@ -28,6 +28,8 @@ public class GameManager2 : MonoBehaviour
     public GameObject correctText;
     public GameObject tooMuchText;
     public GameObject tooLittleText;
+    public GameObject correctMarker;
+    public GameObject goodJob;
 
     private int currentScore;
 
@@ -100,7 +102,7 @@ public class GameManager2 : MonoBehaviour
                 currentScore++;
                 if (currentScore == 10)
                 {
-                    SceneManager.LoadScene("LevelSelect");
+                    StartCoroutine(WaitForSeconds());
                 }
 
             }
@@ -121,11 +123,13 @@ public class GameManager2 : MonoBehaviour
 
     IEnumerator CorrectText()
     {
+        correctMarker.SetActive(true);
         correctText.SetActive(true);
         checkButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3);
         checkButton.GetComponent<Button>().interactable = true;
         correctText.SetActive(false);
+        correctMarker.SetActive(false);
     }
 
     IEnumerator TooMuchText()
@@ -142,4 +146,11 @@ public class GameManager2 : MonoBehaviour
         tooLittleText.SetActive(false);
     }
 
+    IEnumerator WaitForSeconds()
+    {
+        goodJob.SetActive(true);
+        yield return new WaitForSeconds(4);
+        goodJob.SetActive(false);
+        SceneManager.LoadScene("LevelSelect");
+    }
 }
